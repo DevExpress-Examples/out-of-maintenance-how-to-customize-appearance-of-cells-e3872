@@ -1,0 +1,28 @@
+﻿<UserControl xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"  
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="DXPivotGrid_CellAppearance.MainPage"
+             d:DesignHeight="300" d:DesignWidth="400"
+             mc:Ignorable="d" Loaded="UserControl_Loaded">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <dxpg:PivotGridControl CustomCellAppearance="pivotGridControl1_CustomCellAppearance"
+                               GridLayout="pivotGridControl1_GridLayout"
+                               x:Name="pivotGridControl1" >
+            <dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridField FieldName="ShipCountry" Caption="Country" Area="RowArea"
+                                     x:Name="fieldCountry"/>
+                <dxpg:PivotGridField FieldName="ShippedDate" GroupInterval="DateQuarter" 
+                                     Caption="Quarter" Area="ColumnArea" 
+                                     ValueFormat="Qtr {0}"
+                                     x:Name="fieldQuarter"/>
+                <dxpg:PivotGridField FieldName="ShippedDate" GroupInterval="DateMonth"
+                                     Caption="Month" Area="ColumnArea"
+                                     x:Name="fieldMonth"/>
+                <dxpg:PivotGridField FieldName="Freight" Area="DataArea"
+                                     x:Name="fieldFreight"/>
+            </dxpg:PivotGridControl.Fields>
+        </dxpg:PivotGridControl>
+    </Grid>
+</UserControl>
