@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainPage.xaml](./CS/DXPivotGrid_CellAppearance/MainPage.xaml) (VB: [MainPage.xaml.vb](./VB/DXPivotGrid_CellAppearance/MainPage.xaml.vb))
+* [MainPage.xaml.cs](./CS/DXPivotGrid_CellAppearance/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/DXPivotGrid_CellAppearance/MainPage.xaml.vb))
+<!-- default file list end -->
 # How to customize appearance of cells
 
 
